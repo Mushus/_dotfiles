@@ -4,6 +4,6 @@ my dotfiles
 ## install
 
 ```
-git clone https://github.com/Mushus/dotfiles.git
+git clone https://github.com/Mushus/dotfiles.git | cd dotfiles
 make init && make install
 ```
