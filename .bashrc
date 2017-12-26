@@ -1,5 +1,30 @@
-# カラフルなll
-alias ll='ls -al --color=auto'
+# check platform
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+  platform='linux'
+elif [[ "$unamestr" == 'FreeBSD' ]]; then
+  platform='freebsd'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+  platform='darwin'
+fi
+
+if [[ $platform == 'freebsd' || $platform == 'darwin' ]]; then
+
+  # for mac
+  # カラフルなll
+  alias ll='ls -laG'
+
+elif [[ $platform == 'linux' ]]; then
+
+   # for linux
+   # カラフルなll
+  alias ll='ls -la --color'
+
+  # 読みやすいps
+  alias ps='ps --sort=start_time'
+
+fi
 
 # カラフルなgrep
 alias grep='grep --color'
@@ -9,9 +34,6 @@ alias rm='rm -i'
 
 # 読みやすいdf
 alias df='df -h'
-
-# 読みやすいps
-alias ps='ps --sort=start_time'
 
 # bashのprefix?を短く見やすくする
 export PS1='\[\e[01;36m\]\u@\H\[\e[0;0m\]:\[\e[01;34m\]\W\[\e[0;0m\]$ '
