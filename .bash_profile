@@ -1,3 +1,3 @@
 export EDITOR=vi
 
-source ~/.bashrc
+test -r ~/.bashrc && . ~/.bashrc
