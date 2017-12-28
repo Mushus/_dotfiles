@@ -24,6 +24,8 @@ set number
 set cursorline
 " 現在の行を強調表示（縦）
 set cursorcolumn
+" ハイライトの色
+highlight CursorColumn ctermbg=DarkGray
 " 行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
 " インデントはスマートインデント
@@ -65,3 +67,12 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" vim plug
+call plug#begin('~/.vim/plugged')
+
+if (v:version == 704 && has("patch1689")) || v:version >= 705
+  Plug 'fatih/vim-go'
+endif
+
+call plug#end()
