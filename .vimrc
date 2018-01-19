@@ -1,3 +1,5 @@
+set encoding=utf-8
+
 " setting
 " vi 互換モードを切る
 set nocompatible
