@@ -22,12 +22,14 @@ set showcmd
 " 見た目系
 " 行番号を表示
 set number
+" 行番号の色は灰色
+highlight LineNr ctermfg=darkgray
 " 現在の行を強調表示
 set cursorline
 " 現在の行を強調表示（縦）
 set cursorcolumn
 " ハイライトの色
-highlight CursorColumn ctermbg=DarkGray
+highlight CursorColumn ctermbg=238 guifg=#202020
 " 行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
 " インデントはスマートインデント
