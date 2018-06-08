@@ -38,5 +38,8 @@ alias df='df -h'
 # bashのprefix?を短く見やすくする
 export PS1='\[\e[01;36m\]\u@\H\[\e[0;0m\]:\[\e[01;34m\]\W\[\e[0;0m\]$ '
 
+
+export LANG=ja_JP.UTF-8
+
 # 環境毎の設定は別で管理できるように
 test -r ~/.bashrc_env && . ~/.bashrc_env

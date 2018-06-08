@@ -76,7 +76,11 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 call plug#begin('~/.vim/plugged')
 
 if (v:version == 704 && has("patch1689")) || v:version >= 705
+  Plug 'scrooloose/nerdtree'
   Plug 'fatih/vim-go'
 endif
 
 call plug#end()
+
+" NERDTreeのトグル
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
