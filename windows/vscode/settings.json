@@ -1,3 +1,29 @@
 {
-    
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vscode-great-icons",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+    "workbench.colorCustomizations": {
+        // custom: https://glitchbone.github.io/vscode-base16-term/#/hopscotch
+        "terminal.background":"#212121",
+        "terminal.foreground":"#B9B5B8",
+        "terminalCursor.background":"#B9B5B8",
+        "terminalCursor.foreground":"#B9B5B8",
+        "terminal.ansiBlack":"#322931",
+        "terminal.ansiBlue":"#1290BF",
+        "terminal.ansiBrightBlack":"#797379",
+        "terminal.ansiBrightBlue":"#1290BF",
+        "terminal.ansiBrightCyan":"#149B93",
+        "terminal.ansiBrightGreen":"#8FC13E",
+        "terminal.ansiBrightMagenta":"#C85E7C",
+        "terminal.ansiBrightRed":"#DD464C",
+        "terminal.ansiBrightWhite":"#FFFFFF",
+        "terminal.ansiBrightYellow":"#FDCC59",
+        "terminal.ansiCyan":"#149B93",
+        "terminal.ansiGreen":"#8FC13E",
+        "terminal.ansiMagenta":"#C85E7C",
+        "terminal.ansiRed":"#DD464C",
+        "terminal.ansiWhite":"#B9B5B8",
+        "terminal.ansiYellow":"#FDCC59"
+    }
 }

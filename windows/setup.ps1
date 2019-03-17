@@ -1,6 +1,6 @@
 
 ## Install Chocorately
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 choco install -y googlechrome
 choco install -y firefox
@@ -18,11 +18,12 @@ choco install -y googlejapaneseinput
 Set-ItemProperty HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -name HideFileExt -value 0
 ## 隠しファイルを表示する
 Set-ItemProperty HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -name Hidden -value 1
-## (Get-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced").GetValue("Hidden")
 ## タスクバーのコルタナを表示しない
 Set-ItemProperty HKCU:\Software\Microsoft\Windows\CurrentVersion\Search -name SearchboxTaskbarMode -value 0
 ## スタート画面を全画面表示
 # 見つからなかった
+## WSL を使用可能な状態に設定する
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
 
 ## Install VSCode Extension
 

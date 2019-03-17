@@ -1,0 +1,11 @@
+[user]
+	name = mushus
+	email = mushus.wynd@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+	quotepath = false
+[commit]
+	template = ~/.stCommitMsg
+[credential]
+  helper = osxkeychain
+  useHttpPath = true
