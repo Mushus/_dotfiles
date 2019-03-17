@@ -8,6 +8,7 @@ choco install -y git
 choco install -y golang
 choco install -y msys2
 choco install -y vscode
+choco install -y wsltty
 # msys2があると mingw は不要
 # choco install -y mingw
 choco install -y googlejapaneseinput

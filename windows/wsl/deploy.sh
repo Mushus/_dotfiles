@@ -18,3 +18,8 @@ ln -s $DIR/.zshrc ~/.zshrc
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 # zcompinit で警告が出るため雑にパーミッションを絞る
 chmod -R 755 ~/.zplug
+
+## set up git
+git config --global user.email "Mushus.wynd@gmail.com"
+git config --global user.name "Mushus"
+
