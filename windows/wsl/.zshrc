@@ -1,4 +1,4 @@
-# Set up zplug
+## Set up zplug
 source ~/.zplug/init.zsh
 # zplug
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
@@ -13,6 +13,11 @@ if ! zplug check --verbose; then
     echo; zplug install
   fi
 fi
+
+
+## Set up vi
+export EDITOR=vim
+
 
 # Then, source plugins and add commands to $PATH
 zplug load
