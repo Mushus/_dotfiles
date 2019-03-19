@@ -25,5 +25,7 @@
         "terminal.ansiRed":"#DD464C",
         "terminal.ansiWhite":"#B9B5B8",
         "terminal.ansiYellow":"#FDCC59"
-    }
+    },
+    "editor.fontFamily": "Inconsolata, Consolas, 'Courier New', monospace",
+    "editor.fontSize": 15
 }
