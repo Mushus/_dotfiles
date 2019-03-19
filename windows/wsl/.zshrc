@@ -5,6 +5,10 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # prompt
 zplug mafredri/zsh-async, from:github
 zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
+# prompt Config
+export PURE_PROMPT_SYMBOL=▷\ 
+export PURE_GIT_DOWN_ARROW=⇣
+export PURE_GIT_UP_ARROW=⇡
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -31,8 +35,7 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 # Use modern completion system
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
 
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate

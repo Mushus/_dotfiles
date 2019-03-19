@@ -13,6 +13,10 @@ Set-Variable -Name path_code_user -Value $env:USERPROFILE\AppData\Roaming\Code\U
 # vscode settings.json path
 Set-Variable -Name path_code_setting_json -Value $code_user\settings.json -Option Constant
 
+## Uninstall default apps
+# Skype
+Get-AppxPackage *skypeapp* | Remove-AppxPackage
+
 ## Install Chocorately
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -79,3 +83,15 @@ New-Item -Type SymbolicLink -Path $path_code_setting_json -Value $path_dotfiles\
 ## Install fonts
 
 powershell $path_dotfiles_fonts
+
+## Install scoop
+Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression (new-object net.webclient).downloadstring('https://get.scoop.sh')
+# Ready to use extra bucket
+scoop bucket add extras
+# Install concfg
+scoop install concfg
+
+
+## Configure Terminal
+concfg import https://raw.githubusercontent.com/lukesampson/concfg/master/presets/onedark.json
+
