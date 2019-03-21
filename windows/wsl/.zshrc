@@ -64,6 +64,7 @@ alias -g L='| less'
 alias -g H='| head'
 alias -g G='| grep'
 alias -g GI='| grep -ri'
+alias -g CP='| clip.exe'
 # エイリアス
 alias ll='ls -la --color=auto'
 alias so='source'

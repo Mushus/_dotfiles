@@ -21,3 +21,4 @@ apt autoremove -y
 
 ## set up wsl.conf
 ln -s $DIR/etc/wsl.conf /etc/wsl.conf
+ln -s $DIR/../../ ~/dotfiles
